@@ -6,7 +6,7 @@
     <groupId>com.micredis</groupId>
     <artifactId>platon-sprng-mvn-one</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>Platonov's Spring and Maven demo</name>
+    <name>Platonov's Introduction to Maven and Spring</name>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
