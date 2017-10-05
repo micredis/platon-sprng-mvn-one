@@ -23,7 +23,7 @@ public class DemoRest {
             produces = {MediaType.APPLICATION_JSON_VALUE})
     @ResponseBody
     public Demo date() {
-        return new Demo(new Random().nextInt(), getData());
+        return new Demo(new Random().nextInt(), getData(), new Demo());
     }
 
     // Substitute values of a and b correspondingly
