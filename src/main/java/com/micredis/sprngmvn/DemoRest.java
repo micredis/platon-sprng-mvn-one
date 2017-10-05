@@ -21,6 +21,8 @@ public class DemoRest {
     @RequestMapping(value = "/date",
             method = RequestMethod.GET,
             produces = {MediaType.APPLICATION_JSON_VALUE})
+//    It seems that if I delete/comment @ResponseBody from/in the next line
+//    nothing changes
     @ResponseBody
     public Demo date() {
         return new Demo(new Random().nextInt(), getData(), new Demo());
@@ -31,6 +33,8 @@ public class DemoRest {
             method = RequestMethod.POST,
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+//    It seems that if I delete/comment @ResponseBody from/in the next line
+//    nothing changes
     @ResponseBody
     public Demo update(@RequestBody Demo demo) {
         String a = String.valueOf(demo.getA());
